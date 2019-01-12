@@ -19,6 +19,7 @@ nginx_{{ domain }}_ssl_key:
     - mode: 600
     - makedirs: True
     - contents_pillar: nginx:ng:certificates:{{ domain }}:private_key
+    - show_diff: False
     - watch_in:
       - service: nginx_service
 {% endif %}

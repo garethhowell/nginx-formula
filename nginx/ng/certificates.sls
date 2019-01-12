@@ -8,6 +8,7 @@ nginx_{{ domain }}_ssl_certificate:
     - name: /etc/nginx/ssl/{{ domain }}.crt
     - makedirs: True
     - contents_pillar: nginx:ng:certificates:{{ domain }}:public_cert
+    - show_diff: False
     - watch_in:
       - service: nginx_service
 

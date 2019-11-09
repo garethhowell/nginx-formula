@@ -2,6 +2,109 @@
 Changelog
 =========
 
+`2.3.1 <https://github.com/saltstack-formulas/nginx-formula/compare/v2.3.0...v2.3.1>`_ (2019-10-10)
+-------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **certificates.sls:** fix ``salt-lint`` errors (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/bedc1b6>`_\ )
+* **map.jinja:** fix ``salt-lint`` errors (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/0772d8a>`_\ )
+* **pkg.sls:** fix ``salt-lint`` errors (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/06d055e>`_\ )
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **kitchen:** change ``log_level`` to ``debug`` instead of ``info`` (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/671a4ce>`_\ )
+* **kitchen:** install required packages to bootstrapped ``opensuse`` [skip ci] (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/17291a0>`_\ )
+* **kitchen:** use bootstrapped ``opensuse`` images until ``2019.2.2`` [skip ci] (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/a39e124>`_\ )
+* **platform:** add ``arch-base-latest`` (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/c921086>`_\ )
+* **yamllint:** add rule ``empty-values`` & use new ``yaml-files`` setting (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/3d48b1b>`_\ )
+* merge travis matrix, add ``salt-lint`` & ``rubocop`` to ``lint`` job (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/08ce3ed>`_\ )
+* use ``dist: bionic`` & apply ``opensuse-leap-15`` SCP error workaround (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/8ddb921>`_\ )
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **pillar.example:** fix TOFS comment to explain the default path [skip ci] (\ ` <https://github.com/saltstack-formulas/nginx-formula/commit/714f547>`_\ ), closes `/github.com/saltstack-formulas/libvirt-formula/pull/60#issuecomment-537965254 <https://github.com//github.com/saltstack-formulas/libvirt-formula/pull/60/issues/issuecomment-537965254>`_ `/github.com/saltstack-formulas/libvirt-formula/pull/60#issuecomment-537988138 <https://github.com//github.com/saltstack-formulas/libvirt-formula/pull/60/issues/issuecomment-537988138>`_
+
+`2.3.0 <https://github.com/saltstack-formulas/nginx-formula/compare/v2.2.1...v2.3.0>`_ (2019-09-01)
+-------------------------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **kitchen+travis:** replace EOL pre-salted images (\ `70e1426 <https://github.com/saltstack-formulas/nginx-formula/commit/70e1426>`_\ )
+
+Features
+^^^^^^^^
+
+
+* **passenger:** inc config, snippets, servers, etc (\ `e07b558 <https://github.com/saltstack-formulas/nginx-formula/commit/e07b558>`_\ )
+
+`2.2.1 <https://github.com/saltstack-formulas/nginx-formula/compare/v2.2.0...v2.2.1>`_ (2019-08-25)
+-------------------------------------------------------------------------------------------------------
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **readme:** update testing section (\ `182f216 <https://github.com/saltstack-formulas/nginx-formula/commit/182f216>`_\ )
+
+`2.2.0 <https://github.com/saltstack-formulas/nginx-formula/compare/v2.1.0...v2.2.0>`_ (2019-08-12)
+-------------------------------------------------------------------------------------------------------
+
+Features
+^^^^^^^^
+
+
+* **yamllint:** include for this repo and apply rules throughout (\ `6b7d1fe <https://github.com/saltstack-formulas/nginx-formula/commit/6b7d1fe>`_\ )
+
+`2.1.0 <https://github.com/saltstack-formulas/nginx-formula/compare/v2.0.0...v2.1.0>`_ (2019-08-04)
+-------------------------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **kitchen+travis:** modify matrix to include ``develop`` platform (\ `f6b357d <https://github.com/saltstack-formulas/nginx-formula/commit/f6b357d>`_\ )
+
+Features
+^^^^^^^^
+
+
+* **linux:** archlinux support (no osfinger grain) (\ `ab6148c <https://github.com/saltstack-formulas/nginx-formula/commit/ab6148c>`_\ )
+
+`2.0.0 <https://github.com/saltstack-formulas/nginx-formula/compare/v1.1.0...v2.0.0>`_ (2019-06-19)
+-------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **snippets:** removed appending of ".conf" (\ `aa87721 <https://github.com/saltstack-formulas/nginx-formula/commit/aa87721>`_\ )
+
+BREAKING CHANGES
+^^^^^^^^^^^^^^^^
+
+
+* **snippets:** Users have to modify their pillar
+  according to this commit. Users MUST append '.conf' for their
+  existing managed snippets.
+
+`1.1.0 <https://github.com/saltstack-formulas/nginx-formula/compare/v1.0.5...v1.1.0>`_ (2019-06-03)
+-------------------------------------------------------------------------------------------------------
+
+Features
+^^^^^^^^
+
+
+* **tofs:** first implemetation + tplroot (\ `d5262ea <https://github.com/saltstack-formulas/nginx-formula/commit/d5262ea>`_\ )
+
 `1.0.5 <https://github.com/saltstack-formulas/nginx-formula/compare/v1.0.4...v1.0.5>`_ (2019-05-13)
 -------------------------------------------------------------------------------------------------------
 
